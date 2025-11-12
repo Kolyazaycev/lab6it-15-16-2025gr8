@@ -17,5 +17,14 @@ int main() {
     int MAX_NUMBER;
     cout << "Введите диапазон выборки числа (мин. затем макс.).\n";
     cin >> MIN_NUMBER >> MAX_NUMBER; // Устанавливаем диапазон чисел  
-    int secretNumber = generateRandomNumber(MIN_NUMBER, MAX_NUMBER); // Генерируем случайное число  
+    int secretNumber = generateRandomNumber(MIN_NUMBER, MAX_NUMBER); // Генерируем случайное число
+
+    cout << "Я загадал число от " << MIN_NUMBER << " до " << MAX_NUMBER << ". Попробуйте угадать!\n";  
+    while (!isGuessed) {  
+        cout << "Введите ваше число: ";    
+        // Проверка корректности ввода  
+        if (!checkInput(userNumber)) {  
+            cout << "Ошибка ввода! Пожалуйста, введите целое число.\n";  
+            continue;  
+        } 
 }

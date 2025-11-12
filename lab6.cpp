@@ -13,4 +13,9 @@ int main() {
     bool isGuessed = false;
     cout << "Добро пожаловать в игру 'Угадай число'!\n";
   
+    int MIN_NUMBER;  
+    int MAX_NUMBER;
+    cout << "Введите диапазон выборки числа (мин. затем макс.).\n";
+    cin >> MIN_NUMBER >> MAX_NUMBER; // Устанавливаем диапазон чисел  
+    int secretNumber = generateRandomNumber(MIN_NUMBER, MAX_NUMBER); // Генерируем случайное число  
 }

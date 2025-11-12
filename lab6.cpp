@@ -27,4 +27,17 @@ int main() {
             cout << "Ошибка ввода! Пожалуйста, введите целое число.\n";  
             continue;  
         } 
+    // Проверка ответа
+    if (userNumber < secretNumber) {
+        cout << "Загаданное число больше!\n";
+    } else if (userNumber > secretNumber) {
+        cout << "Загаданное число меньше!\n";
+    } else {
+        cout << "Поздравляем! Вы угадали число!\n";
+        isGuessed = true;
+    }
+    }
+    
+    return 0;
+
 }

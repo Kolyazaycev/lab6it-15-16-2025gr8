@@ -29,7 +29,7 @@ int main() {
         } 
         // Проверка ответа
         if (userNumber < secretNumber) {
-            cout << "Загаданное число больше!\n";
+            cout << "Загаданное число больше!\n"; // Проверка веток
       } else if (userNumber > secretNumber) {
           cout << "Загаданное число меньше!\n";
       } else {
